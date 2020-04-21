@@ -57,7 +57,19 @@ class ProductProvider extends Component {
             }
         );
     };
-    openModal = id => {
+    clearCart = (id) =>{
+        let tempProducts = [...this.state.products];
+        tempProducts.forEach(item => {
+            item.inCart = false;
+        })
+
+        this.setState(()=>{
+            return{products: tempProducts, cart: []}
+        })
+         
+     }
+
+     openModal = id => {
         const product = this.getItem(id);
         this.setState(()=>{
             return{modalProduct: product, modalOpen: true};
@@ -136,12 +148,6 @@ class ProductProvider extends Component {
                     this.addTotals();
             }
         )
-        
-    }
-    clearCart = (id) =>{
-       this.setState(()=>{
-           return{cart: []}
-       })
         
     }
     addTotals = () =>{
