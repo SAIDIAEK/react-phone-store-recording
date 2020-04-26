@@ -17,8 +17,38 @@ class ProductProvider extends Component {
         cartTotal:0,
     };
     componentDidMount(){
+        //this.initConnection();
         this.setProcucts();
-    }
+    };
+
+ /*  initConnection = () =>{
+        var express = require('express')
+        var cors = require('cors')
+        var app = express()
+
+        app.use(cors())
+
+        var mysql = require('mysql');
+        var connection = mysql.createConnection({
+          host     : 'localhost',
+          user     : 'root',
+          password : '',
+          database : 'phonestore'
+        });
+        connection.connect(err =>{
+            if(err) {
+                return err;
+            }
+        });
+
+        console.log(connection);
+        
+        connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+          if (error) throw error;
+          console.log('The solution is: ', results[0].solution);
+        });
+    }*/
+
     setProcucts = () =>{
         let tempProducts = [];
         storeProducts.forEach(item=>{
@@ -69,17 +99,19 @@ class ProductProvider extends Component {
          
      }
 
-     openModal = id => {
+    openModal = id => {
         const product = this.getItem(id);
         this.setState(()=>{
             return{modalProduct: product, modalOpen: true};
         })
     }
+    
     closeModal = () =>{
         this.setState(()=>{
             return{modalOpen: false};
         })
-    };
+    }
+
     increment = (id) =>{
        let tempCart = [...this.state.cart];
        const selectedProduct = tempCart.find(item => item.id === id);

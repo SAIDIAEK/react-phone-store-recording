@@ -8,7 +8,7 @@ export default class Details extends Component {
         return (
             <ProductConsumer>
                 {(value)=>{
-                    const {id, company, img, info, price, title, inCart} = value.detailProduct;
+                    const {id, company, img, info, price, title, inCart, categorie} = value.detailProduct;
                     return (
                         <div className="container py-5">
                             {/* title */}
@@ -38,7 +38,7 @@ export default class Details extends Component {
                                     </p>
                                     <p className="text-muted lead">{info}</p>
                                     <div>
-                                        <Link to='/'>
+                                        <Link to={'/' + categorie}>
                                             <ButtonContainer cart>Back to products</ButtonContainer>
                                         </Link>
                                         <ButtonContainer

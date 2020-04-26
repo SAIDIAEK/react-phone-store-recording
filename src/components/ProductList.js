@@ -13,11 +13,16 @@ export default class ProductList extends Component {
                         <div className="row">
                             <ProductConsumer>
                                 {(value)=>{
+                                    var urlcourante = document.location.href;
+                                    var queue_url = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 );
+                                    //console.log(queue_url);                                    
                                     return value.products.map( product => {
-                                        return <Product key={product.id} 
+                                        return ((product.categorie === queue_url) && (<Product key={product.id} 
                                                         product={product} 
-
-                                                />
+                                                />))||
+                                                ((queue_url === "") && (<Product key={product.id} 
+                                                    product={product} 
+                                            />))
                                     })
                                 }}
                             </ProductConsumer>

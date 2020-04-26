@@ -11,6 +11,8 @@ export default class Modal extends Component {
                 {(value) =>{
                     const {modalOpen,closeModal} = value;
                     const {img, title, price}= value.modalProduct;
+                    var urlcourante = document.location.href;
+                    var queue_url = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 );
                     if(!modalOpen){
                         return null;
                     }else{
@@ -23,7 +25,7 @@ export default class Modal extends Component {
                                             <img src={img} className="img-fluid" alt="product"/>
                                             <h5>{title}</h5>
                                             <h5 className="text-muted">price : $ {price}</h5>
-                                            <Link to="/">
+                                            <Link to={"/" + queue_url}>
                                                 <ButtonContainer onClick={()=> closeModal()}>
                                                     store
                                                 </ButtonContainer>

@@ -13,6 +13,8 @@ body {
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
+
+
 .text-title{
   font-family: 'Permanent Maker', cursive;
   letter-spacing: 0.3rem;

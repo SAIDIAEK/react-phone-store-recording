@@ -6,6 +6,7 @@ https://www.iconfinder.com/Makoto_msk */
 export const storeProducts = [
   {
     id: 1,
+    categorie: "phone",
     title: "Google Pixel - Black",
     img: "img/product-1.png",
     price: 10,
@@ -18,6 +19,7 @@ export const storeProducts = [
   },
   {
     id: 2,
+    categorie: "phone",
     title: "Samsung S7",
     img: "img/product-2.png",
     price: 16,
@@ -30,6 +32,7 @@ export const storeProducts = [
   },
   {
     id: 3,
+    categorie: "phone",
     title: "HTC 10 - Black",
     img: "img/product-3.png",
     price: 8,
@@ -42,6 +45,7 @@ export const storeProducts = [
   },
   {
     id: 4,
+    categorie: "phone",
     title: "HTC 10 - White",
     img: "img/product-4.png",
     price: 18,
@@ -54,6 +58,7 @@ export const storeProducts = [
   },
   {
     id: 5,
+    categorie: "phone",
     title: "HTC Desire 626s",
     img: "img/product-5.png",
     price: 24,
@@ -66,6 +71,7 @@ export const storeProducts = [
   },
   {
     id: 6,
+    categorie: "phone",
     title: "Vintage Iphone",
     img: "img/product-6.png",
     price: 17,
@@ -78,6 +84,7 @@ export const storeProducts = [
   },
   {
     id: 7,
+    categorie: "phone",
     title: "Iphone 7",
     img: "img/product-7.png",
     price: 30,
@@ -90,10 +97,37 @@ export const storeProducts = [
   },
   {
     id: 8,
+    categorie: "phone",
     title: "Smashed Iphone",
     img: "img/product-8.png",
     price: 2,
     company: "apple",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 9,
+    categorie: "TV",
+    title: "Panasonic TV LED 32 HD",
+    img: "img/product-9.jpg",
+    price: 100,
+    company: "Panasonic",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 10,
+    categorie: "TV",
+    title: "Cristor 32LH330 TV Led 32",
+    img: "img/product-10.jpg",
+    price: 80,
+    company: "Cristor",
     info:
       "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
     inCart: false,
