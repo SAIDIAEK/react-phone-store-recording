@@ -12,6 +12,7 @@ body {
   font-family: "Owsald", sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+  margin-left: 1000px;
 }
 
 

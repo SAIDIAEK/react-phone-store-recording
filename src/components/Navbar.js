@@ -15,32 +15,28 @@ export default class Navbar extends Component {
                 </Link>
 
                 <ul className="navbar-nav align-items-center">
-{/*                     <li className="dropdown notifications-menu">
-                        <Link to="/" className="dropdown-toggle" data-toggle="dropdown">
-                            <i className="fa fa-bell-o" />
-                            <span className="label label-success">2</span>
+                    {/* <!-- Dropdown --> */}
+                    <li className="nav-item dropdown">
+                        <Link className="nav-link dropdown-toggle" to="/" id="navbardrop" data-toggle="dropdown">
+                            Catégories
                         </Link>
-                        <ul className="dropdown-menu">
-                                <li className="header">You have 2 catégories</li>
-                                <li>
-                                
-                                <ul className="menu">
-                                    <li>
-                                        <Link to="phone">
-                                            <i className="fa fa-mobile text-yellow" /> Phones
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="TV">
-                                            <i className="fa fa-users text-red" /> Télévisions
-                                        </Link>
-                                    </li>
-                                </ul>
-                                </li>
-                                <li className="footer"><Link to="/">View all</Link></li>
-                        </ul>
-                    </li> */}
-                    <li className="nav-item ml-5">
+                        <div className="dropdown-menu">
+                            <div className="categorie-lien">
+                                <Link className="dropdown-item" to="/phone">
+                                    <span>Téléphones Portables</span> 
+                                    <i className="fa fa-mobile float-right" />
+                                </Link>
+                            </div>
+                            <div className="categorie-lien">
+                                <Link className="dropdown-item" to="/TV">
+                                    <span>Télévisions</span> 
+                                    <i className="fa fa-tv float-right" />
+                                </Link>
+                            </div>
+                        </div>
+                    </li>
+
+ {/*                    <li className="nav-item ml-5">
                         <Link to="/phone" className="nav-link">
                             Phones
                         </Link>
@@ -49,7 +45,7 @@ export default class Navbar extends Component {
                         <Link to="/TV" className="nav-link">
                             Télévisions
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
                 
                 <Link to='/cart' className="ml-auto">
@@ -57,7 +53,7 @@ export default class Navbar extends Component {
                         <span className="mr-2">
                             <i className="fa fa-cart-plus" />
                         </span>
-                         my cart
+                         Panier
                     </ButtonContainer>
                 </Link>
             </NavWrapper>
@@ -67,7 +63,7 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-    background: var(--mainBlue);
+    background: var(--mainDark);
     .nav-link{
         color: var(--mainWhite) !important;
         font-size: 1.3rem;
