@@ -16,7 +16,7 @@ function App() {
     <React.Fragment>
       <NavigationBar />
 
-      <Sidebar />
+    {/* <Sidebar /> */}
       {/* <Navbar /> */}
        <Switch>
         <Route exact path="/" component={ProductList} />
