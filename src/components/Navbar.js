@@ -9,7 +9,7 @@ export default class Navbar extends Component {
     render() {
         return (
             
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5 fixed-top">
                 <Link to='/'>
                     <img src={logo} alt="store" className="navbar-brand" />
                 </Link>
