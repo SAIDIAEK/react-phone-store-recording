@@ -18,7 +18,7 @@ export default class Navbar extends Component {
                     {/* <!-- Dropdown --> */}
                     <li className="nav-item dropdown">
                         <Link className="nav-link dropdown-toggle" to="/" id="navbardrop" data-toggle="dropdown">
-                            Catégories
+                            Catégorie
                         </Link>
                         <div className="dropdown-menu">
                             <div className="categorie-lien">
